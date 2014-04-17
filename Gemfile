@@ -30,6 +30,10 @@ group :development do
   gem 'capistrano-rails', '~> 1.1'
 end
 
+group :staging, :production do
+	gem 'mysql2'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
